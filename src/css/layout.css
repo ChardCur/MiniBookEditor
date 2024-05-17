@@ -1,0 +1,182 @@
+/* editor container 的 display方式 */
+.editor-container-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.editor-container-flex-v {
+    display: flex;
+    flex-direction: column;
+}
+
+.editor-container-flex-h {
+    display: flex;
+    flex-direction: row;
+}
+
+/* 样式left right */
+.editor.left {
+    order: 1;
+    /* width: 50%;
+    height: 100%; */
+    grid-row: 1 / span 2;
+}
+
+.editor.right {
+    order: 2;
+    /* width: 50%;
+    height: 100%; */
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 2;
+}
+
+/* 样式top bottom */
+.editor.top {
+    order: 1;
+    /* width: 100%;
+    height: 50%; */
+    /* flex-basis: 100%; */
+    grid-column: 1 / span 2;
+}
+
+.editor.bottom {
+    order: 2;
+    /* width: 100%;
+    height: 50%; */
+    /* flex-basis: 100%; */
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 1;
+}
+
+
+/* 样式top3 */
+.editor.top3_1 {
+    order: 1;
+    grid-column: 1 / span 2;
+}
+
+.editor.top3_2 {
+    order: 2;
+    grid-row: 2 / span 1;
+}
+
+.editor.top3_3 {
+    order: 3;
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+}
+
+/* 样式bottom3 */
+.editor.bottom3_1 {
+    order: 1;
+    grid-column: 1 / span 1;
+}
+
+.editor.bottom3_2 {
+    order: 2;
+    grid-column: 2 / span 1;
+}
+
+.editor.bottom3_3 {
+    order: 3;
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 1;
+}
+
+/* 样式left3 */
+.editor.left3_1 {
+    order: 1;
+    grid-row: 1 / span 2;
+}
+
+.editor.left3_2 {
+    order: 2;
+    grid-column: 2 / span 1;
+}
+
+.editor.left3_3 {
+    order: 3;
+    grid-row: 2 / span 1;
+}
+
+/* 样式right3 */
+.editor.right3_1 {
+    order: 1;
+    grid-column: 1 / span 1;
+}
+
+.editor.right3_2 {
+    order: 2;
+    grid-row: 2 / span 1;
+}
+
+.editor.right3_3 {
+    order: 3;
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 2;
+}
+
+/* 样式all4 */
+.editor.all4_1 {
+    order: 1;
+    grid-column: 1 / span 1;
+}
+
+.editor.all4_2 {
+    order: 2;
+    grid-column: 2 / span 1;
+}
+
+.editor.all4_3 {
+    order: 3;
+    grid-row: 2 / span 1;
+}
+
+.editor.all4_4 {
+    order: 4;
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+}
+
+/* 样式 golden v top*/
+.editor.goldVTop_1 {
+    width: 100%;
+    height: 61.8%;
+}
+
+.editor.goldVTop_2 {
+    flex-grow: 1;
+}
+
+/* 样式 golden v bottom */
+.editor.goldVBottom_1 {
+    flex-grow: 1;
+}
+
+.editor.goldVBottom_2 {
+    width: 100%;
+    height: 61.8%;
+}
+
+/* 样式 golden h left */
+.editor.goldHLeft_1 {
+    height: 100%;
+    width: 61.8%;
+}
+
+.editor.goldHLeft_2 {
+    flex-grow: 1;
+    width: 0;
+}
+
+/* 样式 golden h right */
+.editor.goldHRight_1 {
+    flex-grow: 1;
+    width: 0;
+}
+
+.editor.goldHRight_2 {
+    height: 100%;
+    width: 61.8%;
+}
